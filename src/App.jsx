@@ -9,23 +9,13 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-         I LOVE YOU 🧡🧡🧡🧡THERESA SALIU 😘😘😘
-         Will you spend forever with me?
+      
+        <div>
+        <p style={{fontSize: '100px'}}>  I LOVE YOU 🧡🧡🧡🧡THERESA SALIU 😘😘😘 </p>
+         <br></br>
+         Will you be my best friend 🤗?
 
-        </p>
+        </div>
       </div>
 
     </>
