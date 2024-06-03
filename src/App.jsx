@@ -11,9 +11,9 @@ function App() {
       <div>
       
         <div>
-        <p style={{fontSize: '100px'}}>  I LOVE YOU 🧡🧡🧡🧡THERESA SALIU 😘😘😘 </p>
+        <p style={{fontSize: '100px'}}> Let the cooking begin 🔥🔥🔥 </p>
          <br></br>
-         Will you be my best friend 🤗?
+         Build for impact 😎
 
         </div>
       </div>
