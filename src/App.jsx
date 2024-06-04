@@ -1,25 +1,41 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './Pages/Home'
+import MainLayout from './Layout/MainLayout'
+import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
+import '@fontsource/roboto'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const themeOptions = {
+    palette: {
+      primary: {
+        main: "#0FA1E9",
+      },
+    },
+    Typography: {
+      fontFamily: "roboto",
+    },
+  };
+  const theme = createTheme(themeOptions);
   return (
     <>
-      <div>
-      
-        <div>
-        <p style={{fontSize: '100px'}}> Let the cooking begin 🔥🔥🔥 </p>
-         <br></br>
-         Build for impact 😎
-
-        </div>
-      </div>
-
+      <ThemeProvider theme={theme}>
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <MainLayout>
+                <Home />
+              </MainLayout>
+            }
+          />
+        </Routes>
+        </Router>
+        <CssBaseline />
+        </ThemeProvider>
     </>
-  )
+  );
 }
 
 export default App
