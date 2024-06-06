@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home'
 import MainLayout from './Layout/MainLayout'
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
-import '@fontsource/Poppins'
+// import '@fontsource/Poppins'
 import '@fontsource/roboto'
 
 function App() {
