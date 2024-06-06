@@ -1,9 +1,9 @@
 import { Container } from '@mui/material'
 import React from 'react'
 
-const MainLayout = ({children}) => {
+const MainLayout = ({children, ...props}) => {
   return (
-    <Container maxWidth='xl' disableGutters sx={{p: 0, m: 0}}>
+    <Container maxWidth='xl' disableGutters {...props}>
       {children}
     </Container>
   )
