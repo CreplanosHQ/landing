@@ -27,24 +27,28 @@ const Hero = () => {
         bgcolor="#1A2727D9"
       ></Box>
       <MainLayout
-        sx={{ pb: "136px", px: "80px", zIndex: 1, position: "relative" }}
+        sx={{
+          pb: {xs: '90px', sm: "136px"},
+          px: { xs: "16px", sm: "20px", lg: "80px" },
+          zIndex: 1,
+          position: "relative",
+        }}
       >
-        <Box pt="296px" maxWidth="620px">
+        <Box pt={{xs: '130px', sm: "296px"}} maxWidth="620px" display='flex' flexDirection="column" alignItems={{xs: 'center', sm: 'flex-start'}}>
           <Typography
-            fontSize="40px"
+            fontSize={{xs: '24px', sm: "40px"}}
             color="#EAEAEA"
+            textAlign={{xs: 'center', sm: 'left'}}
             fontWeight={700}
-            
             mb="16px"
           >
             Pioneering the future of digital innovation in Africa.
           </Typography>
           <Typography
-            fontSize="24px"
+            fontSize={{xs: '16px', sm: "24px"}}
             color="#E6E4E4"
             fontWeight={400}
-            
-            mb="32px"
+            mb={{xs: '20px', sm: "32px"}}
           >
             At creplanos, we are more than just a tech company; we are
             visionaries committed to bridging gaps and creating transformative
@@ -53,13 +57,14 @@ const Hero = () => {
           </Typography>
           <Button
             variant="contained"
+            alignSelf='center'
             sx={{
-              width: "294px",
-              height: "71px",
-              borderRadius: "100px",
+              width: {xs: '169px', sm: "294px"},
+              height: {xs: '40px', sm: "71px"},
+              borderRadius: {xs: '10px', sm: "100px"},
               textTransform: "none",
               fontFamily: "poppins",
-              fontSize: "24px",
+              fontSize: {xs: '16px', sm: "24px"},
               color: "#fff",
               fontWeight: 500,
             }}

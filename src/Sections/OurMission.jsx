@@ -4,26 +4,29 @@ import MainLayout from '../Layout/MainLayout'
 
 const OurMission = () => {
   return (
-    <Box pt="40px" pb="80px" bgcolor="#191D1F">
-      <MainLayout sx={{ px: "80px" }}>
+    <Box
+      id='our-mission'
+      pt={{ xs: "30px", sm: "40px" }}
+      pb={{ xs: "30px", sm: "80px" }}
+      bgcolor="#191D1F"
+    >
+      <MainLayout sx={{ px: { xs: "16px", sm: "20px", lg: "80px" } }}>
         <Box>
           <Typography
-            fontSize="48px"
+            fontSize={{ xs: "36px", sm: "48px" }}
             color="#fff"
             fontWeight={700}
-            mb="40px"
+            mb={{ xs: "20px", sm: "40px" }}
             textAlign="center"
-            
           >
             Our Mission
           </Typography>
           <Typography
-            fontSize="28px"
+            fontSize={{ xs: "14px", sm: "28px" }}
             color="#fff"
             fontWeight={400}
             textAlign="center"
-            
-            mb="42px"
+            mb={{ xs: "20px", sm: "42px" }}
           >
             Our Mission is to build bridges and create new digital
             infrastructures tailored specifically to the dynamic and vibrant
