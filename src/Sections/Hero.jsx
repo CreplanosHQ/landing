@@ -28,27 +28,34 @@ const Hero = () => {
       ></Box>
       <MainLayout
         sx={{
-          pb: {xs: '90px', sm: "136px"},
+          pb: { xs: "90px", sm: "136px" },
           px: { xs: "16px", sm: "20px", lg: "80px" },
           zIndex: 1,
           position: "relative",
         }}
       >
-        <Box pt={{xs: '130px', sm: "296px"}} maxWidth="620px" display='flex' flexDirection="column" alignItems={{xs: 'center', sm: 'flex-start'}}>
+        <Box
+          pt={{ xs: "130px", sm: "296px" }}
+          maxWidth="620px"
+          display="flex"
+          flexDirection="column"
+          alignItems={{ xs: "center", sm: "flex-start" }}
+        >
           <Typography
-            fontSize={{xs: '24px', sm: "40px"}}
+            fontSize={{ xs: "24px", sm: "40px" }}
             color="#EAEAEA"
-            textAlign={{xs: 'center', sm: 'left'}}
+            textAlign={{ xs: "center", sm: "left" }}
             fontWeight={700}
             mb="16px"
           >
             Pioneering the future of digital innovation in Africa.
           </Typography>
           <Typography
-            fontSize={{xs: '16px', sm: "24px"}}
+            fontSize={{ xs: "16px", sm: "24px" }}
             color="#E6E4E4"
             fontWeight={400}
-            mb={{xs: '20px', sm: "32px"}}
+            textAlign={{ xs: "center", sm: "left" }}
+            mb={{ xs: "20px", sm: "32px" }}
           >
             At creplanos, we are more than just a tech company; we are
             visionaries committed to bridging gaps and creating transformative
@@ -57,14 +64,14 @@ const Hero = () => {
           </Typography>
           <Button
             variant="contained"
-            alignSelf='center'
+            alignSelf="center"
             sx={{
-              width: {xs: '169px', sm: "294px"},
-              height: {xs: '40px', sm: "71px"},
-              borderRadius: {xs: '10px', sm: "100px"},
+              width: { xs: "169px", sm: "294px" },
+              height: { xs: "40px", sm: "71px" },
+              borderRadius: { xs: "10px", sm: "100px" },
               textTransform: "none",
               fontFamily: "poppins",
-              fontSize: {xs: '16px', sm: "24px"},
+              fontSize: { xs: "16px", sm: "24px" },
               color: "#fff",
               fontWeight: 500,
             }}
